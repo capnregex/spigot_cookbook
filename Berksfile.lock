@@ -1,0 +1,7 @@
+DEPENDENCIES
+  spigot
+    path: .
+    metadata: true
+
+GRAPH
+  spigot (0.1.0)
