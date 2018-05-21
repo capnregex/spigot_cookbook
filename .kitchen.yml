@@ -20,13 +20,10 @@ platforms:
 suites:
   - name: build
     run_list:
+      - recipe[apt]
+      - recipe[ubuntu]
       - recipe[spigot::buildtools]
     verifier:
       inspec_tests:
         - test/integration/default
-    attributes:
-  - name: default
-    run_list:
-    verifier:
-      inspec_tests:
     attributes:
