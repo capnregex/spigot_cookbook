@@ -7,13 +7,13 @@ DEPENDENCIES
   ubuntu
 
 GRAPH
-  apt (7.0.0)
-  homebrew (5.0.4)
-  java (2.0.1)
+  apt (7.1.1)
+  homebrew (5.0.8)
+  java (3.1.2)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
   spigot (0.1.0)
     java (>= 0.0.0)
   ubuntu (2.0.1)
     apt (>= 0.0.0)
-  windows (4.2.2)
+  windows (5.2.2)

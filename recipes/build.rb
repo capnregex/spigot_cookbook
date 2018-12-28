@@ -11,12 +11,13 @@
 dir = node['spigot']['buildtools']['directory']
 jdk = node['spigot']['jdk']['package']
 target = node['spigot']['buildtools']['target']
+memory = node['spigot']['buildtools']['memory']
 
 package jdk
 
 execute "run BuildTools" do
   cwd dir
-  command "java -jar #{target}"
+  command "java -Xmx#{memory} -jar #{target}"
   live_stream true
 end
 
